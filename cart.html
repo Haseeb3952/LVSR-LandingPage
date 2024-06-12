@@ -13,104 +13,116 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!---------------------------------------- Custom CSS Link ----------------------------------------->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-------------------------------------------- Favicon --------------------------------------------->
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+
     <title>Cart</title>
   </head>
   <body>
+    <!-------------------------------------- Hero Section Started -------------------------------------->
 
-        <!-------------------------------------- Hero Section Started -------------------------------------->
-    
-        <section class="navbar-bg">
-          <div class="container">
-            <div class="row">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="./index.html">
-                    <img
-                      src="./assets/images/LVSR-logo.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </a>
+    <section class="navbar-bg">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img
+                  src="./assets/images/LVSR-logo.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"> </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-600"
+                      aria-current="page"
+                      href="./index.html"
+                      >Product</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-600"
+                      aria-current="page"
+                      href="./index.html"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-600"
+                      aria-current="page"
+                      href="./index.html"
+                      >How it Works</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-600"
+                      aria-current="page"
+                      href="./index.html"
+                      >Testimonial</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-600"
+                      aria-current="page"
+                      href="./index.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+
+                <div>
                   <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+                    class="btn btn-download d-flex justify-content-center align-items-center rounded-pill gap-2"
                   >
-                    <span class="navbar-toggler-icon"> </span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active fw-600"
-                          aria-current="page"
-                          href="./index.html"
-                          >Product</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active fw-600"
-                          aria-current="page"
-                          href="./index.html"
-                          >Features</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active fw-600"
-                          aria-current="page"
-                          href="./index.html"
-                          >How it Works</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active fw-600"
-                          aria-current="page"
-                          href="./index.html"
-                          >Testimonial</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active fw-600"
-                          aria-current="page"
-                          href="./index.html"
-                          >Contact Us</a
-                        >
-                      </li>
-                    </ul>
-    
                     <div>
-                      <button
-                        class="btn btn-download d-flex justify-content-center align-items-center rounded-pill gap-2"
-                      >
-                        <div>
-                          <p class="text-white m-0">Download</p>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/download-icon.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </div>
-                      </button>
+                      <p class="text-white m-0">Download</p>
                     </div>
-                  </div>
+                    <div>
+                      <img
+                        src="./assets/images/download-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </button>
                 </div>
-              </nav>
+              </div>
             </div>
-          </div>
-        </section>
-    
-        <!----------------------------------------- Hero Section Ended -------------------------------------->
-    
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------- Hero Section Ended -------------------------------------->
+
     <section>
       <div class="container">
         <div class="row mt-5">
@@ -125,11 +137,12 @@
                   class="img-fluid"
                   alt=""
                 />
-                 
-                  <span class="position-absolute top-0 end-0 cart-icon translate-middle badge rounded-pill btn-store-bg">
-                    2   
-                  </span>
-                
+
+                <span
+                  class="position-absolute top-0 end-0 cart-icon translate-middle badge rounded-pill btn-store-bg"
+                >
+                  2
+                </span>
               </div>
             </div>
           </div>
@@ -408,113 +421,112 @@
                   <p class="custom-fw">$208</p>
                 </div>
               </div>
-             <a href="/address-detail.html">
-              <button
-              class="btn btn-store-bg custom-fw border-0 text-white px-4 py-2 rounded-3 w-100"
-            >
-              Checkout
-            </button>
-             </a>
+              <a href="/address-detail.html">
+                <button
+                  class="btn btn-store-bg custom-fw border-0 text-white px-4 py-2 rounded-3 w-100"
+                >
+                  Checkout
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-        <!-------------------------------------- Footer Section Started ------------------------------------->
+    <!-------------------------------------- Footer Section Started ------------------------------------->
 
-        <footer class="mt-5">
-          <div class="container">
-            <div class="row py-5">
-              <div class="col-12 col-lg-4">
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-lg-4">
+            <a href="#">
+              <img
+                src="./assets/images/LVSR-logo.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </a>
+
+            <p class="pt-3">
+              LVSR simplifies managing and sharing online presence. Customize
+              your profile, share easily, and connect with others seamlessly.
+              Experience privacy and security assurance.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h5 class="pb-4">Useful Links</h5>
+            <ul class="list-unstyled">
+              <li class="py-2">
+                <a href="#" class="text-dark footer-links">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="py-2">
+                <a href="#" class="text-dark footer-links"> Privacy Policy </a>
+              </li>
+              <li class="py-2">
+                <a href="#" class="text-dark footer-links"> Refund Policy </a>
+              </li>
+              <li class="py-2">
+                <a href="#" class="text-dark footer-links"> Eula </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h5 class="pb-4">Follow Us</h5>
+            <div class="d-flex align-items-center gap-4">
+              <div>
                 <a href="#">
                   <img
-                    src="./assets/images/LVSR-logo.svg"
+                    src="./assets/images/facebook-icon.svg"
                     class="img-fluid"
                     alt=""
                   />
                 </a>
-    
-                <p class="pt-3">
-                  LVSR simplifies managing and sharing online presence. Customize
-                  your profile, share easily, and connect with others seamlessly.
-                  Experience privacy and security assurance.
-                </p>
               </div>
-              <div class="col-12 col-lg-4">
-                <h5 class="pb-4">Useful Links</h5>
-                <ul class="list-unstyled">
-                  <li class="py-2">
-                    <a href="#" class="text-dark footer-links">
-                      Terms & Conditions
-                    </a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-dark footer-links"> Privacy Policy </a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-dark footer-links"> Refund Policy </a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-dark footer-links"> Eula </a>
-                  </li>
-                </ul>
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/images/instagram-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
               </div>
-              <div class="col-12 col-lg-4">
-                <h5 class="pb-4">Follow Us</h5>
-                <div class="d-flex align-items-center gap-4">
-                  <div>
-                    <a href="#">
-                      <img
-                        src="./assets/images/facebook-icon.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <img
-                        src="./assets/images/instagram-icon.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <img
-                        src="./assets/images/linkedin-icon.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <img
-                        src="./assets/images/x-icon.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                </div>
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/images/linkedin-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/images/x-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
-        </footer>
-    
-        <section class="bottom-footer">
-          <div class="container">
-            <p class="m-0 p-3 text-center text-dark fw-600">
-              Copyright © 2024. All Rights Reserved. LVSR
-            </p>
-          </div>
-        </section>
-    
-        <!--------------------------------------- Footer Section Ended -------------------------------------->
-    
+        </div>
+      </div>
+    </footer>
+
+    <section class="bottom-footer">
+      <div class="container">
+        <p class="m-0 p-3 text-center text-dark fw-600">
+          Copyright © 2024. All Rights Reserved. LVSR
+        </p>
+      </div>
+    </section>
+
+    <!--------------------------------------- Footer Section Ended -------------------------------------->
 
     <!-- Increment Decrement Script -->
 
