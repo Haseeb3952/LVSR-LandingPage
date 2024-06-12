@@ -136,7 +136,7 @@ body {
 }
 
 .btn-store-bg:hover {
-  background-color: #0058b6;
+  background-color: #0058b6 !important;
 }
 
 .fw-off-price {
