@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+
+        <!-------------------------------------- Hero Section Started -------------------------------------->
+    
+        <section class="navbar-bg">
+          <div class="container">
+            <div class="row">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">
+                    <img
+                      src="./assets/images/LVSR-logo.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"> </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-600"
+                          aria-current="page"
+                          href="./index.html"
+                          >Product</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-600"
+                          aria-current="page"
+                          href="./index.html"
+                          >Features</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-600"
+                          aria-current="page"
+                          href="./index.html"
+                          >How it Works</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-600"
+                          aria-current="page"
+                          href="./index.html"
+                          >Testimonial</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-600"
+                          aria-current="page"
+                          href="./index.html"
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+    
+                    <div>
+                      <button
+                        class="btn btn-download d-flex justify-content-center align-items-center rounded-pill gap-2"
+                      >
+                        <div>
+                          <p class="text-white m-0">Download</p>
+                        </div>
+                        <div>
+                          <img
+                            src="./assets/images/download-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </section>
+    
+        <!----------------------------------------- Hero Section Ended -------------------------------------->
+    
+    <section>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+            <h2 class="custom-fw">Shopping Cart</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-end">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/cart-icon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+                 
+                  <span class="position-absolute top-0 end-0 cart-icon translate-middle badge rounded-pill btn-store-bg">
+                    2   
+                  </span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-9">
+            <div
+              id="productContainer"
+              class="border custom-border-radius p-3 position-relative mt-3"
+            >
+              <div
+                class="position-absolute top-0 end-0 m-2 cross-icon rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  id="closeButton"
+                  class="d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/images/cross-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-center gy-3">
+                <div class="col-12 col-lg-7">
+                  <div class="d-flex gap-4 align-items-center">
+                    <div>
+                      <div class="product-picture p-3 bg-sky">
+                        <img
+                          src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="custom-fw mb-1">Bose Headphone</h5>
+                      <p class="text-secondary m-0 fw-500 pb-1">Color: Black</p>
+                      <p class="text-secondary fs-small m-0">
+                        Gentle formulas to make sure your
+                        <span class="divider"></span> skin stays health,
+                        hydrated, and breakout-free.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                  <div class="d-flex justify-content-end">
+                    <button
+                      id="decrementBtn"
+                      class="btn border-1 border border-secondary px-3 py-0"
+                      onclick="decrement()"
+                    >
+                      -
+                    </button>
+                    <span id="quantity" class="px-3">1</span>
+                    <button
+                      id="incrementBtn"
+                      class="btn border-1 border border-secondary px-3 py-0"
+                      onclick="increment()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div
+                    class="d-flex justify-content-lg-center justify-content-end"
+                  >
+                    <p class="custom-fw m-0">$ 78.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="productContainer2"
+              class="border custom-border-radius p-3 position-relative mt-3"
+            >
+              <div
+                class="position-absolute top-0 end-0 m-2 cross-icon rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  id="closeButton"
+                  class="d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/images/cross-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-center gy-3">
+                <div class="col-12 col-lg-7">
+                  <div class="d-flex gap-4 align-items-center">
+                    <div>
+                      <div class="product-picture p-3 bg-sky">
+                        <img
+                          src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="custom-fw mb-1">Bose Headphone</h5>
+                      <p class="text-secondary m-0 fw-500 pb-1">Color: Black</p>
+                      <p class="text-secondary fs-small m-0">
+                        Gentle formulas to make sure your
+                        <span class="divider"></span> skin stays health,
+                        hydrated, and breakout-free.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                  <div class="d-flex justify-content-end">
+                    <button
+                      id="decrementBtn"
+                      class="btn border-1 border border-secondary px-3 py-0"
+                      onclick="decrement()"
+                    >
+                      -
+                    </button>
+                    <span id="quantity" class="px-3">1</span>
+                    <button
+                      id="incrementBtn"
+                      class="btn border-1 border border-secondary px-3 py-0"
+                      onclick="increment()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div
+                    class="d-flex justify-content-lg-center justify-content-end"
+                  >
+                    <p class="custom-fw m-0">$ 78.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="productContainer3"
+              class="border custom-border-radius p-3 position-relative mt-3"
+            >
+              <div
+                class="position-absolute top-0 end-0 m-2 cross-icon rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  id="closeButton"
+                  class="d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/images/cross-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-center gy-3">
+                <div class="col-12 col-lg-7">
+                  <div class="d-flex gap-4 align-items-center">
+                    <div>
+                      <div class="product-picture p-3 bg-sky">
+                        <img
+                          src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="custom-fw mb-1">Bose Headphone</h5>
+                      <p class="text-secondary m-0 fw-500 pb-1">Color: Black</p>
+                      <p class="text-secondary fs-small m-0">
+                        Gentle formulas to make sure your
+                        <span class="divider"></span> skin stays health,
+                        hydrated, and breakout-free.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                  <div class="d-flex justify-content-end">
+                    <button
+                      id="decrementBtn"
+                      class="btn border-1 border border-secondary px-3 py-0"
+                      onclick="decrement()"
+                    >
+                      -
+                    </button>
+                    <span id="quantity" class="px-3">1</span>
+                    <button
+                      id="incrementBtn"
+                      class="btn border-1 border border-secondary px-3 py-0"
+                      onclick="increment()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div
+                    class="d-flex justify-content-lg-center justify-content-end"
+                  >
+                    <p class="custom-fw m-0">$ 78.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-4 align-items-center gy-3">
+              <div class="col-12 col-lg-3">
+                <div>
+                  <a href="./product-detail.html">
+                    <button
+                      class="btn btn-catalog bg-transparent custom-fw fs-small py-2"
+                    >
+                      <div class="d-flex gap-2 align-items-center">
+                        <div>
+                          <img
+                            src="./assets/images/left-arrow.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Back to catalog</p>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="d-flex gap-1 align-items-center">
+                  <div>
+                    <img
+                      src="./assets/images/info-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="text-secondary m-0 fs-small">
+                      Delivery charges will add at checkout
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="border border-1 mt-3 p-3 custom-border-radius">
+              <h3 class="custom-fw m-0">$ 230.67</h3>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p>Discount</p>
+                </div>
+                <div>
+                  <p>$22.67</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="custom-fw">Subtotal</p>
+                </div>
+                <div>
+                  <p class="custom-fw">$208</p>
+                </div>
+              </div>
+             <a href="/address-detail.html">
+              <button
+              class="btn btn-store-bg custom-fw border-0 text-white px-4 py-2 rounded-3 w-100"
+            >
+              Checkout
+            </button>
+             </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-------------------------------------- Footer Section Started ------------------------------------->
+
+        <footer class="mt-5">
+          <div class="container">
+            <div class="row py-5">
+              <div class="col-12 col-lg-4">
+                <a href="#">
+                  <img
+                    src="./assets/images/LVSR-logo.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+    
+                <p class="pt-3">
+                  LVSR simplifies managing and sharing online presence. Customize
+                  your profile, share easily, and connect with others seamlessly.
+                  Experience privacy and security assurance.
+                </p>
+              </div>
+              <div class="col-12 col-lg-4">
+                <h5 class="pb-4">Useful Links</h5>
+                <ul class="list-unstyled">
+                  <li class="py-2">
+                    <a href="#" class="text-dark footer-links">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a href="#" class="text-dark footer-links"> Privacy Policy </a>
+                  </li>
+                  <li class="py-2">
+                    <a href="#" class="text-dark footer-links"> Refund Policy </a>
+                  </li>
+                  <li class="py-2">
+                    <a href="#" class="text-dark footer-links"> Eula </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-4">
+                <h5 class="pb-4">Follow Us</h5>
+                <div class="d-flex align-items-center gap-4">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="./assets/images/facebook-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <img
+                        src="./assets/images/instagram-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <img
+                        src="./assets/images/linkedin-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <img
+                        src="./assets/images/x-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+        <section class="bottom-footer">
+          <div class="container">
+            <p class="m-0 p-3 text-center text-dark fw-600">
+              Copyright © 2024. All Rights Reserved. LVSR
+            </p>
+          </div>
+        </section>
+    
+        <!--------------------------------------- Footer Section Ended -------------------------------------->
+    
+
+    <!-- Increment Decrement Script -->
+
+    <script>
+      function increment() {
+        var quantityElement = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityElement.innerText);
+        quantityElement.innerText = currentQuantity + 1;
+      }
+
+      function decrement() {
+        var quantityElement = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityElement.innerText);
+        if (currentQuantity > 1) {
+          quantityElement.innerText = currentQuantity - 1;
+        }
+      }
+    </script>
+
+    <!-- Product Remove -->
+
+    <script>
+      // Function to handle fade-out animation
+      function fadeOut(element) {
+        element.style.opacity = 1;
+
+        (function fade() {
+          if ((element.style.opacity -= 0.1) < 0) {
+            element.style.display = "none";
+          } else {
+            requestAnimationFrame(fade);
+          }
+        })();
+      }
+
+      // Get the close button element
+      var closeButton = document.getElementById("closeButton");
+
+      // Get the product container element
+      var productContainer = document.getElementById("productContainer");
+
+      // Attach click event listener to the close button
+      closeButton.addEventListener("click", function () {
+        fadeOut(productContainer);
+      });
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

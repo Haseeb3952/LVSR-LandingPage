@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Sora", sans-serif;
+}
+
+/* Bootstrap Reset Classes */
+
+.navbar-light .navbar-toggler:focus {
+  color: rgba(208, 208, 208, 0.021);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0);
+}
+
+.focus-shadow-reset {
+   
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0) !important;
+}
+
+/* Global CSS */
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.custom-text-primary {
+  color: #00a0fa;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-14 {
+    font-size: 15px;
+}
+
+/* Custom CSS */
+
+#go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00A0FA;
+  transition: opacity 0.4s, transform 0.4s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 99;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+#go-top-btn.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#go-top-btn i {
+  color: #fff;
+  font-size: 25px;
+}
+.btn-sign-in {
+  border: 1px solid #00a0fa;
+  transition: 0.3s;
+}
+
+.btn-sign-in:hover {
+  background-color: white;
+}
+
+.btn-download {
+  background-color: #00a0fa;
+  transition: 0.3s;
+}
+
+.btn-bg-sky {
+  background-color: #00a0fa;
+  transition: 0.3s;
+}
+
+.btn-bg-sky:hover {
+  background-color: #008ada;
+}
+
+/* .btn-download:hover {
+    background-color: #D2F1ED;
+    border: 1px solid #00A0FA;
+} */
+
+.hero-bg {
+  background-image: url("/assets/images/hero-bg.svg");
+  height: 700px;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Our Products Section CSS */
+
+.product-bg {
+  background-color: #d9d9d9;
+}
+.product-image {
+  height: 250px;
+  width: 250px;
+}
+
+.product-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-store-bg {
+  background-color: #337ccc;
+  transition: 0.4s;
+}
+
+.btn-store-bg:hover {
+  background-color: #0058b6;
+}
+
+.fw-off-price {
+  font-weight: 400;
+}
+
+/* Features Section CSS */
+
+.share-card {
+    background-color: #D2F1ED;
+}
+
+/* How It Works Section CSS */
+
+.number-card {
+  display: grid;
+  grid-template-columns: 70px auto;
+}
+
+.number-circle {
+  border: 1px solid #00A0FA;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: 0.3s;
+}
+
+.card {
+  box-shadow: -20px 20px 50px rgba(0, 40, 99, 0.05);
+}
+
+.card:hover .number-circle {
+  background-color: #00A0FA;
+  color: #ffffff;
+}
+
+/* Testimonial Section CSS */
+
+.quote-icon {
+  height: 70px;
+  width: 70px;
+}
+
+.testimonial-card {
+  border-radius: 20px;
+  transition: 0.4s;
+  
+}
+
+.testimonial-card:hover {
+  background-color: #D2F1ED;
+}
+
+.testimonial-picture {
+  height: 50px;
+  width: 50px;
+}
+
+.testimonial-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Newsletter Section CSS */
+
+.newsletter-bg {
+  background-image: url('/assets/images/newsletter-bg.svg');
+  height: max-content;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.email-input input.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0);
+}
+
+.message-textarea textarea:focus {
+  box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0);
+
+}
+
+.bg-sky {
+  background-color: #e6f3f8;
+}
+
+/* Footer Section CSS */
+
+footer {
+  background-image: url('/assets/images/footer-bg.svg');
+  height: max-content;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer-links {
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  text-decoration: underline;
+}
+
+.bottom-footer {
+  background-image: url('/assets/images/bottom-footer-bg.svg');
+  height: max-content;
+}
+
+/* Product Page CSS */
+
+.navbar-bg {
+  background-image: url('/assets/images/navbar-bg.svg');
+  height: max-content;
+}
+
+
+.product-bg {
+  background-color: #d9d9d9;
+}
+
+.product-image {
+  height: 250px;
+  width: 250px;
+}
+
+.product-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.fw-off-price {
+  font-weight: 400;
+}
+
+.btn-store-bg {
+  background-color: #337ccc !important;
+}
+
+.fs-small {
+  font-size: 13px;
+}
+
+/* cart page css */
+.custom-border-radius {
+  border-radius: 17px;
+}
+
+.product-picture-bg {
+  background-color: #e0f4ff;
+}
+
+.product-picture {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.product-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.cross-icon {
+  height: 20px;
+  width: 20px;
+  background-color: #eaeaea;
+}
+
+.bg-sky {
+  background-color: #e6f3f8;
+}
+
+.btn-catalog {
+  border: 1.5px solid #75c6f2;
+  border-radius: 8px;
+}
+
+/* Product Detail Page CSS */
+
+.product-detail-bg {
+  background-color: #f5f5f5;
+}
+
+.product-thumbnail {
+  height: 400px;
+  width: 400px;
+}
+
+.product-thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Address Details Page CSS  */
+
+.address-details-border {
+  border-radius: 15px;
+  box-shadow: 0px 4px 30px 0px #00000026;
+}
+
+.address-input {
+  border: 1px solid #818181;
+  border-radius: 5px;
+}
+
+.input-icon img {
+  height: 20px;
+  width: 20px;
+}
+
+.btn-save-address {
+  background-color: #0192e3;
+}
+
+.btn-add {
+  border-radius: 0px 23.5px 23.5px 0px;
+}
+
+.link-input-second {
+  border-radius: 23.5px 0px 0px 23.5px;
+  border: 0.51px solid #b1b1b1;
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .fs-60 {
+    font-size: 45px;
+  }
+  .newsletter-bg {
+    border-radius: 0px;
+  }
+  footer {
+    background-image: url('/assets/images/footer-bg.svg');
+    height: max-content;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */
+
+@media (min-width: 767.98px) {
+  .divider {
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+  }
+}
