@@ -25,24 +25,7 @@
       type="image/x-icon"
     />
 
-    <!---------------------------------------- Slik Slider CDN ----------------------------------------->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-------------- OWL -------------->
+    <!------------------------------------------ OWL Carousal CDN -------------------------------------->
 
     <link
       rel="stylesheet"
@@ -58,6 +41,15 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+
+    <!--------------------------------------- BoxIcon Awesome CDN -------------------------------------->
+
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
     />
 
     <!---------------------------------------- Font Awesome CDN ---------------------------------------->
@@ -1039,7 +1031,7 @@
     <section>
       <div class="container">
         <h1 class="text-center py-5">Pricing Plans</h1>
-        <div class="row">
+        <div class="row gy-4">
           <div class="col-12 col-lg-4">
             <div class="pricing-plans-card p-4">
               <img
@@ -1128,17 +1120,17 @@
           <div class="col-12 col-lg-4">
             <div class="pricing-plans-card p-4">
               <img
-                src="./assets/images/basic-plan.svg"
+                src="./assets/images/business-icon.svg"
                 class="img-fluid border border-1 border-light rounded-3"
                 alt=""
               />
-              <h3 class="py-3 m-0">Basic</h3>
+              <h3 class="py-3 m-0">Business</h3>
               <p class="color-white">
                 Unleash the Power of Your Business with Pro Plan.
               </p>
               <div class="d-flex align-items-center gap-2">
                 <div>
-                  <h1>$34</h1>
+                  <h1>$44</h1>
                 </div>
                 <div>
                   <sub class="color-white">per month</sub>
@@ -1211,22 +1203,31 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="pricing-plans-card p-4">
+            <div class="business-plans-card p-4">
               <img
-                src="./assets/images/basic-plan.svg"
-                class="img-fluid border border-1 border-light rounded-3"
+                src="./assets/images/premium-plan-icon.svg"
+                class="img-fluid"
                 alt=""
               />
-              <h3 class="py-3 m-0">Basic</h3>
-              <p class="color-white">
-                Unleash the Power of Your Business with Pro Plan.
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <h3 class="py-3 m-0">Premium</h3>
+                </div>
+                <div>
+                  <button class="btn btn-outline-light">
+                    Best Offer
+                  </button>
+                </div>
+              </div>
+              <p class="">
+                Take Your Business to the Next Level with Business Plan.
               </p>
               <div class="d-flex align-items-center gap-2">
                 <div>
-                  <h1>$34</h1>
+                  <h1>$56</h1>
                 </div>
                 <div>
-                  <sub class="color-white">per month</sub>
+                  <sub class="">per month</sub>
                 </div>
               </div>
               <hr />
@@ -1239,7 +1240,7 @@
                   />
                 </div>
                 <div>
-                  <p class="m-0">Enhanced Analytics</p>
+                  <p class="m-0">Advanced Marketing Tools</p>
                 </div>
               </div>
               <div class="d-flex align-items-center gap-3 my-3">
@@ -1251,7 +1252,7 @@
                   />
                 </div>
                 <div>
-                  <p class="m-0">Custom Domain</p>
+                  <p class="m-0">Customizable Templates</p>
                 </div>
               </div>
               <div class="d-flex align-items-center gap-3 my-3">
@@ -1263,7 +1264,7 @@
                   />
                 </div>
                 <div>
-                  <p class="m-0">E-commerce Integration</p>
+                  <p class="m-0">Multi-user Access</p>
                 </div>
               </div>
               <div class="d-flex align-items-center gap-3 my-3">
@@ -1275,7 +1276,7 @@
                   />
                 </div>
                 <div>
-                  <p class="m-0">Priority Support</p>
+                  <p class="m-0">Third-party Integrations</p>
                 </div>
               </div>
               <div class="d-flex align-items-center gap-3 my-3">
@@ -1287,10 +1288,10 @@
                   />
                 </div>
                 <div>
-                  <p class="m-0">Advanced Security</p>
+                  <p class="m-0">24/7 Priority Support</p>
                 </div>
               </div>
-              <button class="btn btn-outline-dark w-100 rounded-3">
+              <button class="btn btn-dark w-100 rounded-3">
                 Get Started
               </button>
             </div>
@@ -1613,6 +1614,10 @@
         },
       });
     </script>
+
+    <!-- Font Awesome CDN -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
